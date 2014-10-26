@@ -201,10 +201,12 @@ class GIFDecoder {
 				break;
 			}
 			
-			for ($i=0; $i!=$u; ++$i)
+			/*for ($i=0; $i!=$u; ++$i)
 			{
 				$this->GIF_string .= $this->GIF_stream { $this->GIF_bfseek++ };
-			}
+			}*/
+			$this->GIF_string .= substr($this->GIF_stream, $this->GIF_bfseek, $u);
+			$this->GIF_bfseek += $u;
 			
 			//GIFDecoder::GIFGetByte ( $u );
 			//GIFDecoder::GIFPutByte ( $this->GIF_buffer );
