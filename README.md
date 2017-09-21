@@ -5,5 +5,5 @@ It avoid GIFGetByte/GIFPutByte for the images content. Instead, it is copied dir
 
 Some other improvements :
 - it uses the SplFixedArray to improve the performances of GIFGetByte, so it requires PHP >=5.3.
-- it allows you to extrct the dimensions and position of each frame, if you want to rebuild your animation after some modifications.
+- it allows you to extract the dimensions and position of each frame, if you want to rebuild your animation after some modifications.
 - GIFEncoder : added transparency feature
