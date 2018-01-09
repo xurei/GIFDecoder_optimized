@@ -1,6 +1,10 @@
 This is an optimized version of the GIFDecoder and GIFEncoder classes, by László Zsidi. (source: http://www.phpclasses.org/package/3234-PHP-Split-GIF-animations-into-multiple-images.html
 and http://www.phpclasses.org/package/3163-PHP-Generate-GIF-animations-from-a-set-of-GIF-images.html)
 
+NOTE: two github repositories have been created since then : 
+- https://github.com/jacoka/GIFEncoder 
+- https://github.com/jacoka/GIFDecoder
+
 It avoid GIFGetByte/GIFPutByte for the images content. Instead, it is copied directly to the returned images. This eliminates a lot of ord() and chr() calls, which leads to about x4 speed improvement for large images.
 
 Some other improvements :
